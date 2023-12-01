@@ -10,8 +10,8 @@ namespace A
     {
         static void Main(string[] args)
         {
-            //Hello.Mainx(args);
-            Zanamenko.Mainx(args);
+            Hello.Mainx(args);
+            //Zanamenko.Mainx(args);
         }
     }
 }
