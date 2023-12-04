@@ -12,8 +12,8 @@ namespace A
         {
             //Hello.Mainx(args);
             //Zanamenko.Mainx(args);
-            a_01_Pocet_dnu_a_hodin.Mainx(args);
-            //a_03_Zadej_teplotu.Mainx(args);
+            //a_01_Pocet_dnu_a_hodin.Mainx(args);
+            a_03_Zadej_teplotu.Mainx(args);
         }
     }
 }
