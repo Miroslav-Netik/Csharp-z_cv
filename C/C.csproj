@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C97AE8AA-6355-487A-AAA8-7DF561375026}</ProjectGuid>
+    <ProjectGuid>{A9C06D6C-151F-47EE-85DB-844D455C0030}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>B</RootNamespace>
-    <AssemblyName>B</AssemblyName>
+    <RootNamespace>C</RootNamespace>
+    <AssemblyName>C</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,24 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="b_01_Nerovnost.cs" />
-    <Compile Include="b_02_Delitelnost_x_y.cs" />
-    <Compile Include="b_03_hodnota_vyrazu.cs" />
-    <Compile Include="b_04_Nejvetsi_nejmensi.cs" />
-    <Compile Include="b_05_Vyska_zaka.cs" />
-    <Compile Include="b_06_Trasa_auta.cs" />
-    <Compile Include="b_07_Letopocty.cs" />
-    <Compile Include="b_08_Rozlideni_pismen_a_znaku.cs" />
-    <Compile Include="b_09_Porovnani_dvou_cisel.cs" />
-    <Compile Include="b_10_Odmocnina_cisla.cs" />
-    <Compile Include="b_11_Zjisteni_ctverce.cs" />
-    <Compile Include="b_12_Je_den_a_horko.cs" />
-    <Compile Include="b_13_Chcete_skoncit.cs" />
-    <Compile Include="b_14_Kvadraticka_rovnice.cs" />
-    <Compile Include="b_15_SC_Co_delat_podle_pocasi.cs" />
-    <Compile Include="b_16_SC_Kalkulacka.cs" />
-    <Compile Include="b_17_SC_Kurz_smena_penez.cs" />
-    <Compile Include="b_18_SC_Dnu_v_mesici.cs" />
+    <Compile Include="c_01_Tabulka_fce_sinus.cs" />
+    <Compile Include="c_02_Interval_cisel.cs" />
+    <Compile Include="c_03_Sportka_jednodussi.cs" />
+    <Compile Include="c_04_Klesajici_posloupnost.cs" />
+    <Compile Include="c_05_Stredni_hodnota.cs" />
+    <Compile Include="c_06_Jako_d1.cs" />
+    <Compile Include="c_07_Simulace_kurzu_koruny.cs" />
+    <Compile Include="c_09_Vsechny_delitele_zadaneho_cisla.cs" />
+    <Compile Include="c_10_Zkouseni_male_nasobilky.cs" />
+    <Compile Include="c_11_Tabulka_ASCII.cs" />
+    <Compile Include="c_12_Golf_to_nechapu.cs" />
+    <Compile Include="c_13_Tabulka_male_nasobilky.cs" />
+    <Compile Include="c_14_Hvezdicky.cs" />
+    <Compile Include="c_15_100_nahodnych_cisel.cs" />
+    <Compile Include="c_16_Vypis_cisel_na_radky.cs" />
+    <Compile Include="c_17_Nahodne_hvezdicky.cs" />
+    <Compile Include="c_18_Prvocisla.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

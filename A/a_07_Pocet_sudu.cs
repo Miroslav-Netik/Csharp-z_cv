@@ -8,6 +8,7 @@ namespace A
 {
     internal class a_07_Pocet_sudu
     {
+        //  7) Zadejte počet sudů a množství litrů v sudu (ve všech je stejně). Kolik litrů je celkem?
         public static void Mainx(string[] args)
         { }
     }
