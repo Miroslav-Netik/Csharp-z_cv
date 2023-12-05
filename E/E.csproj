@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0B9838E-2840-44B5-8358-BB7BD05A322F}</ProjectGuid>
+    <ProjectGuid>{EF7FFD27-04C0-4729-AAE3-AE8442568E73}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A</RootNamespace>
-    <AssemblyName>A</AssemblyName>
+    <RootNamespace>E</RootNamespace>
+    <AssemblyName>E</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="a_01_Pocet_dnu_a_hodin.cs" />
-    <Compile Include="a_03_Zadej teplotu.cs" />
-    <Compile Include="a_04_mZas_na_kmZah.cs" />
-    <Compile Include="a_05_Uroky.cs" />
-    <Compile Include="a_06_Kruh.cs" />
-    <Compile Include="a_07_Pocet_sudu.cs" />
-    <Compile Include="a_08_Druha_mocnina.cs" />
-    <Compile Include="a_09_Zisk.cs" />
-    <Compile Include="a_10_Rad_na_stupne.cs" />
-    <Compile Include="a_11_Bezecka_trat.cs" />
-    <Compile Include="a_12_tezsi_objem_valce.cs" />
-    <Compile Include="a_13_tezsi_pravouhly_trojuhelnik.cs" />
-    <Compile Include="Hello.cs" />
+    <Compile Include="e_01_Opakovani_najmensiho.cs" />
+    <Compile Include="e_02_Pocet_zadanych_cisel.cs" />
+    <Compile Include="e_03_Kolikrat_padla_cisla_v_procentach.cs" />
+    <Compile Include="e_04_Znova_sportka_bez_opakovani.cs" />
+    <Compile Include="e_05_Rada_cisel_operace_s_nimi_ve_smyckach.cs" />
+    <Compile Include="e_06_Slovo_z_pismen.cs" />
+    <Compile Include="e_07_Poradi_slova_v_poli.cs" />
+    <Compile Include="e_08_vypise_slova_opacne_pak_licha_a_suda.cs" />
+    <Compile Include="e_10_Minimum_v_matrixu.cs" />
+    <Compile Include="e_11_Matrix_prehozeni.cs" />
+    <Compile Include="e_12_Lokalni_maxima.cs" />
+    <Compile Include="e_13_Cisla_v_posloupnosti.cs" />
+    <Compile Include="e_14_Bubble_sort.cs" />
+    <Compile Include="e_15_Prevod_do_morseovky.cs" />
+    <Compile Include="e_16_karty_Valka.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Zanamenko.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

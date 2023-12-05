@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0B9838E-2840-44B5-8358-BB7BD05A322F}</ProjectGuid>
+    <ProjectGuid>{0B28AF6D-365B-4BFD-BBD4-2FE864793D45}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A</RootNamespace>
-    <AssemblyName>A</AssemblyName>
+    <RootNamespace>D</RootNamespace>
+    <AssemblyName>D</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="a_01_Pocet_dnu_a_hodin.cs" />
-    <Compile Include="a_03_Zadej teplotu.cs" />
-    <Compile Include="a_04_mZas_na_kmZah.cs" />
-    <Compile Include="a_05_Uroky.cs" />
-    <Compile Include="a_06_Kruh.cs" />
-    <Compile Include="a_07_Pocet_sudu.cs" />
-    <Compile Include="a_08_Druha_mocnina.cs" />
-    <Compile Include="a_09_Zisk.cs" />
-    <Compile Include="a_10_Rad_na_stupne.cs" />
-    <Compile Include="a_11_Bezecka_trat.cs" />
-    <Compile Include="a_12_tezsi_objem_valce.cs" />
-    <Compile Include="a_13_tezsi_pravouhly_trojuhelnik.cs" />
-    <Compile Include="Hello.cs" />
+    <Compile Include="d_01_Pocet_zaku_ve_skole.cs" />
+    <Compile Include="d_02_Uctenky_z_nakupu.cs" />
+    <Compile Include="d_03_Linearni_posloupnost.cs" />
+    <Compile Include="d_04_Varianta_na_b5.cs" />
+    <Compile Include="d_05_Rada_cisel_vetsi_mensi_soucet_prumer_.cs" />
+    <Compile Include="d_06_Hadani_cisla.cs" />
+    <Compile Include="d_07_Dokud_nepadme_sest.cs" />
+    <Compile Include="d_08_Rozliseni_znaku_a_pismen.cs" />
+    <Compile Include="d_09_Zadavani_teploty.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Zanamenko.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

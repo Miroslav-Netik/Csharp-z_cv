@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0B9838E-2840-44B5-8358-BB7BD05A322F}</ProjectGuid>
+    <ProjectGuid>{A9C06D6C-151F-47EE-85DB-844D455C0030}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>A</RootNamespace>
-    <AssemblyName>A</AssemblyName>
+    <RootNamespace>C</RootNamespace>
+    <AssemblyName>C</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="a_01_Pocet_dnu_a_hodin.cs" />
-    <Compile Include="a_03_Zadej teplotu.cs" />
-    <Compile Include="a_04_mZas_na_kmZah.cs" />
-    <Compile Include="a_05_Uroky.cs" />
-    <Compile Include="a_06_Kruh.cs" />
-    <Compile Include="a_07_Pocet_sudu.cs" />
-    <Compile Include="a_08_Druha_mocnina.cs" />
-    <Compile Include="a_09_Zisk.cs" />
-    <Compile Include="a_10_Rad_na_stupne.cs" />
-    <Compile Include="a_11_Bezecka_trat.cs" />
-    <Compile Include="a_12_tezsi_objem_valce.cs" />
-    <Compile Include="a_13_tezsi_pravouhly_trojuhelnik.cs" />
-    <Compile Include="Hello.cs" />
+    <Compile Include="c_01_Tabulka_fce_sinus.cs" />
+    <Compile Include="c_02_Interval_cisel.cs" />
+    <Compile Include="c_03_Sportka_jednodussi.cs" />
+    <Compile Include="c_04_Klesajici_posloupnost.cs" />
+    <Compile Include="c_05_Stredni_hodnota.cs" />
+    <Compile Include="c_06_Jako_d1.cs" />
+    <Compile Include="c_07_Simulace_kurzu_koruny.cs" />
+    <Compile Include="c_09_Vsechny_delitele_zadaneho_cisla.cs" />
+    <Compile Include="c_10_Zkouseni_male_nasobilky.cs" />
+    <Compile Include="c_11_Tabulka_ASCII.cs" />
+    <Compile Include="c_12_Golf_to_nechapu.cs" />
+    <Compile Include="c_13_Tabulka_male_nasobilky.cs" />
+    <Compile Include="c_14_Hvezdicky.cs" />
+    <Compile Include="c_15_100_nahodnych_cisel.cs" />
+    <Compile Include="c_16_Vypis_cisel_na_radky.cs" />
+    <Compile Include="c_17_Nahodne_hvezdicky.cs" />
+    <Compile Include="c_18_Prvocisla.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Zanamenko.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
