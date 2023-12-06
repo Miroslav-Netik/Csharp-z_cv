@@ -38,7 +38,7 @@ namespace B
             {
                 min = treti_cislo;
             }
-            Console.WriteLine($"{min}, {max}");
+            Console.WriteLine($"Nejmenší je {min}, největší je {max}");
 
             Console.WriteLine("Press Enter...");
             Console.ReadLine();
