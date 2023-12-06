@@ -38,12 +38,14 @@ namespace A
                 foreach (char ch in s) Console.WriteLine(ch);
             }
             {
+                int cislo;
                 int[] pole_3 = new int[5];
                 pole_3[0] = 100;
                 pole_3[1] = 1000;
+                cislo = pole_3[0];
 
                 Array.Sort(pole_3);
-                Console.WriteLine("Pozice čísla " + 100 + " je " + Array.BinarySearch(pole_3, 100));
+                Console.WriteLine("Pozice čísla " + cislo + " je " + Array.BinarySearch(pole_3, cislo));
                 //Console.WriteLine("Pozice čísla" + cislo + "je" + Array.BinarySearch(pole_2, cislo);
             }
         }
