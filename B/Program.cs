@@ -17,7 +17,11 @@ namespace B
             //b_05_Vyska_zaka.Mainx(args);
             //b_06_Trasa_auta.Mainx(args);
             //b_07_Letopocty.Mainx(args);
-            b_08_Rozlideni_pismen_a_znaku.Mainx(args);
+            // neni udelano b_08_Rozlideni_pismen_a_znaku.Mainx(args);
+            //b_09_Porovnani_dvou_cisel.Mainx(args);
+            //b_10_Odmocnina_cisla.Mainx(args);
+            //b_11_Zjisteni_ctverce.Mainx(args);
+            b_12_Je_den_a_horko.Mainx(args);
         }
     }
 }

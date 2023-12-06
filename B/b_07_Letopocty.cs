@@ -40,6 +40,7 @@ namespace B
                 else if (zadane_datum >= 1946 && zadane_datum < 1990)
                 {
                     Console.WriteLine(obdobi_4);
+                    Console.WriteLine("No to je paráda. Konečně tady mám kurzor vycentrovaná ve středu obrazovky!!!");
                 }
                 else if (zadane_datum >= 1990 && zadane_datum < 1994)
                 {
