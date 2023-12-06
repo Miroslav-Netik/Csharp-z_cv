@@ -24,11 +24,26 @@ namespace B
         {
             Console.WriteLine("Jsem b_08");
 
-            char[] zadany_znak;
+            char zadany_znak;
             int znak;
 
-            Console.WriteLine("Zadej znak: ");
-            
+            Console.WriteLine("Zadej písmenko nebo číslíčko: ");
+            zadany_znak = Console.ReadLine()[0];
+            znak = (zadany_znak);
+            if (znak >= 48 && znak <= 57)
+            { 
+                Console.WriteLine("Znak je číslo."); 
+            }
+            else if (znak >= 65 && znak <= 90)
+            {
+                Console.WriteLine("Znak je velké písmeno.");
+            }
+            else if (znak >= 97 && znak <= 122)
+            {
+                Console.WriteLine("Znak je malé písmeno.");
+            }
+            else
+            { Console.WriteLine("Znak je asi něco jiného..."); }
 
             Console.WriteLine("Press Enter");
             Console.ReadLine();
