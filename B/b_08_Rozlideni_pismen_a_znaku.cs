@@ -29,7 +29,12 @@ namespace B
 
             Console.WriteLine("Zadej písmenko nebo číslíčko: ");
             zadany_znak = Console.ReadLine()[0];
+            //zadany_znak = (char)Console.Read(); 
             znak = (zadany_znak);
+            //Při použití Console.Read() je potřeba vyprázdnit vstupní buffer,
+            //protože v něm zůstal Enter, a ten pak odentruje následující Console.WriteLine()
+            //while (Console.In.Peek() != -1)   
+            //    Console.In.Read();
             if (znak >= 48 && znak <= 57)
             { 
                 Console.WriteLine("Znak je číslo."); 
