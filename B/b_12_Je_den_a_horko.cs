@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace B
 {
@@ -19,6 +15,32 @@ namespace B
         {
             Console.WriteLine("Jsem b_12");
 
+            //string odpoved;   //Pro verzi s třístavovým příkazem
+            char den, horko;
+            Console.WriteLine("Je den? (A/N): ");
+            den = Console.ReadLine()[0];
+            Console.WriteLine("Je horko? (A/N): ");
+            horko = Console.ReadLine()[0];
+            den = Char.ToUpper(den);
+            horko = char.ToUpper(horko);
+            //odpoved je špatně - pro podmínku nn
+            //odpoved = (horko is 'A' && den is 'A') ? "Jdi si zaplavat" : (horko is 'A' && den is 'N') ? "Je noc, jdi spát" : "Je zima, zůstaň doma.";
+            if (den == 'A' && horko == 'A')
+            {
+                Console.WriteLine("Jdi si zaplavat.");
+            }
+            else if (den == 'A' && horko == 'N')
+            {
+                Console.WriteLine("Je zima, zůstaň doma.");
+            }
+            else if (den == 'N' && horko == 'A')
+            {
+                Console.WriteLine("V noci jdi spát.");
+            }
+            else
+            {
+                Console.WriteLine("Je noc a zima, kašli na to...");
+            }
 
             Console.WriteLine("Press Enter...");
             Console.ReadLine();
