@@ -23,7 +23,9 @@ namespace B
             //b_11_Zjisteni_ctverce.Mainx(args);
             //b_12_Je_den_a_horko.Mainx(args);
             //b_13_Chcete_skoncit.Mainx(args);
-            b_15_SC_Co_delat_podle_pocasi.Mainx(args);
+            //b_15_SC_Co_delat_podle_pocasi.Mainx(args);
+            //b_16_SC_Kalkulacka.Mainx(args);
+            b_17_SC_Kurz_smena_penez.Mainx(args);
         }
     }
 }
