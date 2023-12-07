@@ -21,7 +21,9 @@ namespace B
             //b_09_Porovnani_dvou_cisel.Mainx(args);
             //b_10_Odmocnina_cisla.Mainx(args);
             //b_11_Zjisteni_ctverce.Mainx(args);
-            b_12_Je_den_a_horko.Mainx(args);
+            //b_12_Je_den_a_horko.Mainx(args);
+            //b_13_Chcete_skoncit.Mainx(args);
+            b_15_SC_Co_delat_podle_pocasi.Mainx(args);
         }
     }
 }
