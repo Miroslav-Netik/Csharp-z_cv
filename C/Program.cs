@@ -15,7 +15,8 @@ namespace C
             //c_03_Sportka_jednodussi.Mainx(args);
             //c_04_Klesajici_posloupnost.Mainx(args);
             //c_05_Stredni_hodnota.Mainx(args);
-            c_06_Jako_d1.Mainx(args);
+            //c_06_Jako_d1.Mainx(args);
+            c_07_Simulace_kurzu_koruny.Mainx(args);
         
         }
     }
