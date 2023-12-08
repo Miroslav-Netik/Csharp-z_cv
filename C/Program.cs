@@ -10,7 +10,8 @@ namespace C
     {
         static void Main(string[] args)
         {
-            c_01_Tabulka_fce_sinus.Mainx(args);
+            //c_01_Tabulka_fce_sinus.Mainx(args);
+            c_02_Interval_cisel.Mainx(args);
         }
     }
 }
