@@ -13,7 +13,8 @@ namespace C
             //c_01_Tabulka_fce_sinus.Mainx(args);
             //c_02_Interval_cisel.Mainx(args);
             //c_03_Sportka_jednodussi.Mainx(args);
-            c_04_Klesajici_posloupnost.Mainx(args);
+            //c_04_Klesajici_posloupnost.Mainx(args);
+            c_05_Stredni_hodnota.Mainx(args);
         
         }
     }
