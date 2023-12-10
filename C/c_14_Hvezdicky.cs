@@ -40,10 +40,10 @@ namespace C
                     for (int j = 1; j <= i; j++)
                     {
                         hvezdy += hvezda;
-                    }
-                }
+                    } // end for j
+                } // end for k
                 hvezdy += $"\n";
-            }
+            } // end for i
             Console.WriteLine(hvezdy);
             Console.WriteLine("");
 
