@@ -19,7 +19,8 @@ namespace C
             //c_07_Simulace_kurzu_koruny.Mainx(args);
             //c_09_Vsechny_delitele_zadaneho_cisla.Mainx(args);
             //c_10_Zkouseni_male_nasobilky.Mainx(args);
-            c_11_Tabulka_ASCII.Mainx(args);
+            //c_11_Tabulka_ASCII.Mainx(args);
+            c_12_Golf_to_nechapu.Mainx(args);
         
         }
     }

@@ -21,7 +21,7 @@ namespace C
                 txt_vystup += $"ASCII ({i}) je {(char)i}\n";
             }
             Console.WriteLine(txt_vystup);
-
+ 
             Console.WriteLine("Zmáčkni jakoukoli klávesu...");
             Console.ReadKey();
         }
