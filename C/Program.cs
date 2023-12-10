@@ -20,7 +20,8 @@ namespace C
             //c_09_Vsechny_delitele_zadaneho_cisla.Mainx(args);
             //c_10_Zkouseni_male_nasobilky.Mainx(args);
             //c_11_Tabulka_ASCII.Mainx(args);
-            c_12_Golf_to_nechapu.Mainx(args);
+            //c_12_Golf_to_nechapu.Mainx(args);
+            c_13_Tabulka_male_nasobilky.Mainx(args);
         
         }
     }
