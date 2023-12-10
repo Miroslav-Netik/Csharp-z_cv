@@ -23,7 +23,8 @@ namespace C
             //c_12_Golf_to_nechapu.Mainx(args);
             //c_13_Tabulka_male_nasobilky.Mainx(args);
             //c_14_Hvezdicky.Mainx(args);
-            c_15_100_nahodnych_cisel.Mainx(args);
+            //c_15_100_nahodnych_cisel.Mainx(args);
+            c_16_Vypis_cisel_na_radky.Mainx(args);
         
         }
     }
