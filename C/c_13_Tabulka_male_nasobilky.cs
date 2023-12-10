@@ -27,15 +27,15 @@ namespace C
             {
                 for (j = 1; j <= nasobky; j++)
                 {
-                    radek += $"{i * j, 4}";
+                    radek += $"{i * j, 4}"; //Výpočet násobků v řádku
                 }
                 if (i == 1)
                 {
-                    prvni_radek = $"{prvni_mezera, 5}{radek}";
+                    prvni_radek = $"{prvni_mezera, 5}{radek}";  // První řádek - záhlaví
                 }
-                radek = $"{i ,4} {radek}";
-                tabulka += $"{radek} \n" ;
-                radek = "";
+                radek = $"{i ,4} {radek}";  // Vždy řádek s číslem násobku v prvním sloupci
+                tabulka += $"{radek} \n" ;  // Uložení "hotového" řádku do výsledné tabulky
+                radek = ""; // Vynulování řádku pro nový výpořet v další smyčce
             }
             Console.WriteLine($"{prvni_radek}\n{tabulka}");
 
