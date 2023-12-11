@@ -17,7 +17,7 @@ namespace C
             int nahodne;
             string txt_vystup = "";
 
-            for (int i = 1; i <= 10000; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 nahodne = rnd.Next(1, 100);
                 for (int j = 1; j <= nahodne; j++)

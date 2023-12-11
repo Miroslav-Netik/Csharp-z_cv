@@ -10,6 +10,8 @@ namespace E
     {
         static void Main(string[] args)
         {
+            e_01_Opakovani_najmensiho.Mainx(args);
+            //e_10_Minimum_v_matrixu.Mainx(args);
         }
     }
 }
