@@ -23,48 +23,37 @@ namespace E
         {
             Console.WriteLine("Jsem e_11\n");
 
-            Dim pole_1(3, 3) As Byte
-        Dim i As Byte, j As Byte, pocitadlo As Byte
-        Dim txt_vystup As String, txt_prohozene As String
+            int[,] pole_1 = new int[4, 4];
+            int pocitadlo;
+            string txt_vystup, txt_prohozene;
+            pocitadlo = 1;
+            txt_vystup = "";
+            txt_prohozene = "";
 
-        i = 0
-        j = 0
-        pocitadlo = 1
-        txt_vystup = ""
-        txt_prohozene = ""
+            //'Naplní pole
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    pole_1[i, j] = pocitadlo;
+                    pocitadlo++;
+                    txt_vystup += $"{pole_1[i, j],3}";
+                }
+                txt_vystup += $"\n";
+            }
+            //'Prohození indexů
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    txt_prohozene += $"{pole_1[j, i],3}";
+                }
+                txt_prohozene += $"\n";
+            }
+            //  Výpis hodnot
+            Console.WriteLine($"{txt_vystup}\n{txt_prohozene}");
 
-        'Naplní pole
-        Do While i < 4
-            Do While j < 4
-                pole_1(i, j) = pocitadlo
-                pocitadlo += 1
-                txt_vystup += Str(pole_1(i, j)) + Chr(9)
-                j += 1
-            Loop
-            j = 0
-            txt_vystup += Chr(10)
-            i += 1
-        Loop
-
-        'Prohození indexů
-        i = 0
-        j = 0
-
-        Do While i < 4
-            Do While j < 4
-                txt_prohozene += Str(pole_1(j, i)) + Chr(9)
-                j += 1
-            Loop
-            j = 0
-            txt_prohozene += Chr(10)
-            i += 1
-        Loop
-
-        'Výpis obsahu pole po naplnění a zobrazení po prohození indexů
-        MsgBox(txt_vystup + Chr(10) + txt_prohozene)
-
-
-            Console.WriteLine("Zmáčkni cokoliv\n");
+            Console.WriteLine("Zmáčkni cokoliv...\n");
             Console.ReadKey();
         }
     }
