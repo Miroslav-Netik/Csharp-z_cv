@@ -30,7 +30,7 @@ namespace E
             velikost = 10;
             rozsah_min = 1;
             rozsah_max = 11;
-            pocitadlo = 0;
+            //pocitadlo = 0;
 
             max = rozsah_min;
             min = rozsah_max;
