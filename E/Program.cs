@@ -16,7 +16,8 @@ namespace E
             //e_11_Matrix_prehozeni.Mainx(args);
             //e_12_Lokalni_maxima.Mainx(args);
             //e_13_Cisla_v_posloupnosti.Mainx(args);
-            e_14_Bubble_sort.Mainx(args);
+            //e_14_Bubble_sort.Mainx(args);
+            e_15_Prevod_do_morseovky.Mainx(args);
         }
     }
 }
