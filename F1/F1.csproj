@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="F1_09_Obrat_text.cs" />
     <Compile Include="F1_04_Prestupny_rok_gregoriansky.cs" />
     <Compile Include="F1_08_Pocet_dni_mesice.cs" />
     <Compile Include="f_01_Prevod_na_radiany.cs" />
