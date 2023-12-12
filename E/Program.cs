@@ -14,7 +14,8 @@ namespace E
             //e_02_Pocet_zadanych_cisel.Mainx(args);
             //e_10_Minimum_v_matrixu.Mainx(args);
             //e_11_Matrix_prehozeni.Mainx(args);
-            e_12_Lokalni_maxima.Mainx(args);
+            //e_12_Lokalni_maxima.Mainx(args);
+            e_13_Cisla_v_posloupnosti.Mainx(args);
         }
     }
 }
