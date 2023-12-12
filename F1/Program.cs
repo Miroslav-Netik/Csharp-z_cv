@@ -10,6 +10,7 @@ namespace F1
     {
         static void Main(string[] args)
         {
+            F1_04_Prestupny_rok_gregoriansky.Mainx(args);
         }
     }
 }
