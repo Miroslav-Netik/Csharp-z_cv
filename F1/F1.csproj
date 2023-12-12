@@ -46,6 +46,7 @@
     <Compile Include="F1_09_Obrat_text.cs" />
     <Compile Include="F1_04_Prestupny_rok_gregoriansky.cs" />
     <Compile Include="F1_08_Pocet_dni_mesice.cs" />
+    <Compile Include="F1_10_Bez_mezer.cs" />
     <Compile Include="f_01_Prevod_na_radiany.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
