@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +17,9 @@ namespace E
             Console.WriteLine("Jsem e_15\n");
 
             string[] pole_morseovky = new string[26];
-            string txt_vystup, txt_zadani, zadane_pismeno;
-            string prelozene_pismeno;
+            string txt_vystup, txt_zadani;
+            char znak;
+
 
             pole_morseovky[0] = ".-"; // A
             pole_morseovky[1] = "-..."; // B
@@ -46,35 +48,28 @@ namespace E
             pole_morseovky[24] = "-.--"; //Y
             pole_morseovky[25] = "--.."; //Z
 
-            prelozene_pismeno = "";
             txt_vystup = "";
 
             Console.WriteLine("Zadej text pro převod do morseovky: ");
-            txt_zadani =  Console.ReadLine().ToUpper();
+            txt_zadani = Console.ReadLine().ToUpper();
 
             Console.WriteLine(txt_zadani);
 
+            //Rozdělení slova na znaky oddělené "/" a nahrazení mezery za "/"
             for (int i = 0; i < txt_zadani.Length; i++)
             {
-
+                znak = txt_zadani[i];
+                if (znak == ' ')
+                {
+                    txt_vystup += "/";
+                }
+                else
+                {
+                    // Platí pro velká písmena, pro malá, pokud bych je nechal by bylo - 97
+                    txt_vystup += $"{pole_morseovky[(int)(znak) - 65]}/";
+                }
             }
-
-              
-              //Rozdělení slova na znaky oddělené "/" a nahrazení mezery za "/"
-              For i = 1 To Len[txt_zadani]
-                  zadane_pismeno = Mid[txt_zadani, i, 1]
-                  If zadane_pismeno = " " Then
-                      prelozene_pismeno = "/"
-                  Else
-                      //Platí pro velká písmena, pro malá, pokud bych je nechal by bylo -97
-                      prelozene_pismeno = pole_morseovky[Asc[zadane_pismeno] - 65] + "/"
-                  End If
-                  txt_vystup += prelozene_pismeno
-
-              Next
-
-              MsgBox[txt_vystup]*/
-
+            Console.WriteLine(txt_vystup);
 
             Console.WriteLine("\nStiskni cokoliv...");
             Console.ReadKey();
