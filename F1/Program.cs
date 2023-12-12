@@ -10,7 +10,8 @@ namespace F1
     {
         static void Main(string[] args)
         {
-            F1_04_Prestupny_rok_gregoriansky.Mainx(args);
+            //F1_04_Prestupny_rok_gregoriansky.Mainx(args);
+            F1_08_Pocet_dni_mesice.Mainx(args);
         }
     }
 }
