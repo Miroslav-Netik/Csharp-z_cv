@@ -13,7 +13,8 @@ namespace F1
             //F1_04_Prestupny_rok_gregoriansky.Mainx(args);
             //F1_08_Pocet_dni_mesice.Mainx(args);
             //F1_09_Obrat_text.Mainx(args);
-            F1_10_Bez_mezer.Mainx(args);
+            //F1_10_Bez_mezer.Mainx(args);
+            F1_11_Vyskyty_retezce.Mainx(args);
         }
     }
 }
