@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="F02_01_Uspory_osob_a_uroky.cs" />
+    <Compile Include="F2_02_Losovani_sazky.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
