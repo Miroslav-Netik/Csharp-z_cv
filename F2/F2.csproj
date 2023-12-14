@@ -51,6 +51,7 @@
     <Compile Include="F2_06_Suda_cisla_z_pole.cs" />
     <Compile Include="F2_07_Serazeno_vzestupne.cs" />
     <Compile Include="F2_08_Vzestupne_kolikaty_porusuje.cs" />
+    <Compile Include="F2_09_Linearni_posloupnost.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
