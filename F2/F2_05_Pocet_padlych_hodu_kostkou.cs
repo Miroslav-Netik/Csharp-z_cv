@@ -18,33 +18,70 @@ namespace F2
         {
             Console.WriteLine("Jsem F2_05\n");
 
+            int pocet_hodu;
+            string s = "";
+            int[] pole = new int[1000];
+            int[] vyskyt = new int[1000];
+            int[] pole_vyskytu = new int[1000];
 
+            Console.Write("Zadej počet hodů: ");
+            pocet_hodu = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nStiskni cokoliv: ");
+            //Naplní pole hodnotami náhodných hodů
+            Random rnd = new Random();
+            for (int i = 0; i < pocet_hodu; i++)
+            {
+                pole[i] = rnd.Next(1, 7);
+                s += pole[i] + ", ";
+            }
+            s += "\n";
+            s += "Funkce:    \n";
+
+            // Vypíše počty jednotlivých hození FUKNCÍ
+            vyskyt = F_PocetPadlychF(pole, pocet_hodu);
+            for (int i = 1; i <= 6; i++)
+            {
+                s += $"{i} padlo {vyskyt[i]}x.\n";
+            }
+            s += "Subrutina:  \n";
+
+            // Vypíše počty jednotlivých hození SUBRUTINOU
+            S_PocetPadlych(pole, pocet_hodu, ref pole_vyskytu);
+            for (int i = 1; i <= 6; i++)
+            {
+                s += $"{i} padlo {pole_vyskytu[i]}x.\n";
+            }
+            Console.WriteLine(s);
+
+            Console.WriteLine("\nStiskni cokoliv...");
             Console.ReadKey();
         }
-        static int F_PocetPadlychF(int[] poleHodu, int hodu)
+        static int[] F_PocetPadlychF(int[] poleHodu, int hodu)
         {
-            int[] pole_vnitrni = new int[poleHodu.Length];
-            int hozeno;
-
-            Random rnd = new Random();
+            int[] pole_vyskytu = new int[poleHodu.Length];
+                // Spočítá jednotlivá hozená čísla tím, že na indexy nového pole, 
+                // odpovídající hodnotám hodů, uložených ve starém poli,
+                // přičte jedničku... :-) Jak prosté... Ale příjít na to!
+                for (int i = 0; i < hodu; i++)
+                {
+                    pole_vyskytu[poleHodu[i]]++; // Na index číslo pole[i], vložím jedničku,
+                                       // tím napočítám počet jednotlivých čísel
+                }
+            return pole_vyskytu;
+        }
+        static void S_PocetPadlych(int[] poleHodu, int hodu, ref int[] pole_poctu)
+        {
+            int[] pole_vyskytu = new int[poleHodu.Length];
+            // Spočítá jednotlivá hozená čísla tím, že na indexy nového pole, 
+            // odpovídající hodnotám hodů, uložených ve starém poli,
+            // přičte jedničku... :-) Jak prosté... Ale příjít na to!
             for (int i = 0; i < hodu; i++)
             {
-                hozeno = rnd.Next(1, 7);
+                pole_vyskytu[poleHodu[i]]++; // Na index číslo pole[i], vložím jedničku,
+                                             // tím napočítám počet jednotlivých čísel
             }
-            return 0;
+            pole_poctu = pole_vyskytu;
         }
-        /* Dim pole(5) As Integer
-         Dim i As Integer, hozeno As Integer
-
-
-         For i = 0 To hodu - 1
-             hozeno = Int(Rnd()* 6) + 1
-             pole(hozeno - 1) = pole(hozeno - 1) + 1         've VS lze i pole(x-1) += 1, nelze ale použít ++
-         Next
-
-         PocetPadlychF = pole
-     End Function*/
+        
     }
 }
