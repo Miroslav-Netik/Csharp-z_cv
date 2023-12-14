@@ -46,6 +46,7 @@
     <Compile Include="F02_01_Uspory_osob_a_uroky.cs" />
     <Compile Include="F2_02_Losovani_sazky.cs" />
     <Compile Include="F2_03_Cviceni_subrutiny.cs" />
+    <Compile Include="F2_04_Pocet_Vyskytu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
