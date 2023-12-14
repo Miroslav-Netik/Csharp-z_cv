@@ -51,6 +51,7 @@
     <Compile Include="e_06_Slovo_z_pismen.cs" />
     <Compile Include="e_07_Poradi_slova_v_poli.cs" />
     <Compile Include="e_08_vypise_slova_opacne_pak_licha_a_suda.cs" />
+    <Compile Include="e_09_Pocet_hodu_kostkou_procentualne.cs" />
     <Compile Include="e_10_Minimum_v_matrixu.cs" />
     <Compile Include="e_11_Matrix_prehozeni.cs" />
     <Compile Include="e_12_Lokalni_maxima.cs" />
