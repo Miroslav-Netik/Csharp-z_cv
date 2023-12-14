@@ -49,6 +49,7 @@
     <Compile Include="F2_04_Pocet_Vyskytu.cs" />
     <Compile Include="F2_05_Pocet_padlych_hodu_kostkou.cs" />
     <Compile Include="F2_06_Suda_cisla_z_pole.cs" />
+    <Compile Include="F2_07_Serazeno_vzestupne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

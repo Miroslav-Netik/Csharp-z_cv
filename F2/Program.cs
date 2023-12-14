@@ -16,7 +16,8 @@ namespace F2
             //F2_03_Cviceni_subrutiny.Mainx(args);
             //F2_04_Pocet_Vyskytu.Mainx(args);
             //F2_05_Pocet_padlych_hodu_kostkou.Mainx(args);
-            F2_06_Suda_cisla_z_pole.Mainx(args);
+            //F2_06_Suda_cisla_z_pole.Mainx(args);
+            F2_07_Serazeno_vzestupne.Mainx(args);
         }
     }
 }
