@@ -18,12 +18,14 @@ namespace F2
             double[] pole_cisel = new double[100];
             double vstup_zadani_cisla;
             int pocitadlo = 0;
+            bool plati = false;
             string txt_vystup = "";
             string txt_vystup_plati = "";
 
             Console.WriteLine("Zadej číslo (0 pro ukončení): ");
             vstup_zadani_cisla = double.Parse(Console.ReadLine());
 
+            // Naplnění pole ručně
             while (vstup_zadani_cisla != 0)
             {
                 pole_cisel[pocitadlo] = vstup_zadani_cisla;
@@ -33,24 +35,26 @@ namespace F2
             }
             Console.WriteLine(txt_vystup);
 
+            // Výpis funkcí
             if (F_Vzestupne(pole_cisel) == true)
             {
-                Console.WriteLine("Čísla jsou vzesupně.");
+                Console.WriteLine("Čísla jsou vzestupně.");
             }
             else
             {
-                Console.WriteLine("Ťak ne. Čísla nejsou vzestupně...");
+                Console.WriteLine("Tak ne. Čísla nejsou vzestupně...");
             }
 
-            /*
-
-            If Vzestupne(pole_cisel) Then
-                txt_vystup_plati = "Čísla jsou řazena vzestupně."
-            Else
-                txt_vystup_plati = "Čísla nejsou vzestupně."
-            End If
-
-            MsgBox(txt_vystup + Chr(10) + txt_vystup_plati)*/
+            // Vypis SUBRUTINOU
+            S_Vzestupne(pole_cisel, ref plati);
+            if (plati == true)
+            {
+                Console.WriteLine("Čísla jsou vzestupně.");
+            }
+            else
+            {
+                Console.WriteLine("Tak ne. Čísla nejsou vzestupně...");
+            }
 
             Console.WriteLine("\nStiskni cokoliv...");
             Console.ReadKey();
@@ -68,11 +72,44 @@ namespace F2
                     {
                         return false;
                     }
-                }      
+                }
             }
             return true;
-            
-          
         }
+        static void S_Vzestupne(double[] pole_vstup, ref bool vystup)
+        {
+            //Jakmile je cislo nasledujici cislo v poli
+            //vetsi nebo rovno predchozimu, je podmínka false
+           vystup = true;
+            for (int i = 0; i < pole_vstup.Length - 1; i++)
+            {
+                if (pole_vstup[i + 1] != 0)
+                {
+                    if (pole_vstup[i + 1] <= pole_vstup[i])
+                    {
+                        vystup = false;
+                        break;
+                    }
+                }
+            }
+        }
+        static void S2_Vzestupne(double[] pole_vstup, ref bool vystup)
+        {
+            bool neniVzestupne = false; // Předpokládáme, že všechna čísla jsou vzestupná
+
+            for (int i = 0; i < pole_vstup.Length - 1 && !neniVzestupne; i++)
+            {
+                if (pole_vstup[i + 1] != 0)
+                {
+                    if (pole_vstup[i + 1] <= pole_vstup[i])
+                    {
+                        neniVzestupne = true; // Jakmile najdeme dvojici, která není vzestupná, nastavíme neniVzestupne na true
+                    }
+                }
+            }
+
+            vystup = !neniVzestupne; // Pokud neniVzestupne je true, vystup bude false a naopak
+        }
+
     }
 }
