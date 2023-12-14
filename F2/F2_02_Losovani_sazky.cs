@@ -17,15 +17,17 @@ namespace F2
 
             int[] pole_tazenych = new int[100];
             int[] pole_upravene = new int[100];
+            int[] s_pole_upravene = new int[100];
             int tazene_cislo, rozsah_max, rozsah_min;
             int pocet_opakovani;
-            string txt_vystup,txt_vystup_2 = "", txt_upraveny_vystup;
+            string txt_vystup,txt_vystup_2 = "", txt_upraveny_vystup, txt_upraveny_vystup_2;
 
             txt_upraveny_vystup = "";
+            txt_upraveny_vystup_2 = "";
             txt_vystup = "";
             rozsah_max = 50;
             rozsah_min = 1;
-            pocet_opakovani = 5;
+            pocet_opakovani = 25;
 
             Random rnd = new Random();
 
@@ -36,25 +38,36 @@ namespace F2
                 pole_tazenych[i] = tazene_cislo;
             }
 
+            // Výpis zadaných hodnot z pole
             for (int i = 0; i < pocet_opakovani; i++)
             {
                 txt_vystup_2 += pole_tazenych[i] + ", ";
             }
             Console.WriteLine(txt_vystup + "\n" + txt_vystup_2);
 
-            pole_upravene = Ocisti(pole_tazenych);
+            // Výpis hodnot se zjištěnou duplicitou funkcí
+            pole_upravene = F_Ocisti(pole_tazenych);
             for (int i = 0; i < pocet_opakovani; i++)
             {
                 txt_upraveny_vystup += pole_upravene[i] + ", ";
             }
-            Console.WriteLine(txt_upraveny_vystup);
-           
+            Console.WriteLine("Funkce ->    " + txt_upraveny_vystup);
+
+            // Výpis hodnot se zjištěnou duplicitou Subrutinou
+            S_Ocisti(pole_tazenych,ref s_pole_upravene);
+            for (int i = 0; i < pocet_opakovani; i++)
+            {
+                txt_upraveny_vystup_2 += s_pole_upravene[i] + ", ";
+            }
+            Console.WriteLine($"Subrutina -> {txt_upraveny_vystup_2}");
+
             Console.WriteLine("\nStisni cokoliv...");
             Console.ReadKey();
         }
 
-        static int[] Ocisti(int[] vstupni_pole)
+        static int[]F_Ocisti(int[] vstupni_pole)
         {
+            // Za duplicitní hodnoty dosadí nulu
             int[] vystupni_pole = new int[vstupni_pole.Length];
 
             //'Naplním vystupní pole vstupním, aby se vstupnímu nic nestalo
@@ -75,6 +88,29 @@ namespace F2
                 }
             }
             return vystupni_pole;
+        }
+        static void S_Ocisti(int[] vstupni_pole, ref int[] vystupni_pole)
+        {
+            // Za duplicitní hodnoty dosadí nulu
+            
+            //'Naplním vystupní pole vstupním, aby se vstupnímu nic nestalo
+            for (int i = 0; i < vstupni_pole.Length; i++)
+            {
+                vystupni_pole[i] = vstupni_pole[i];
+            }
+
+            //'Pak postupně projíždím výstupní
+            for (int i = 0; i < vstupni_pole.Length; i++)
+            {
+                // Vždy od dalšího indexu, který už byl porovnán se zbytkem
+                for (int j = i + 1; j < vstupni_pole.Length; j++)
+                {
+                    if (vystupni_pole[i] == vystupni_pole[j])
+                    {
+                        vystupni_pole[j] = 0;
+                    }
+                }
+            }
         }
     }
 }
