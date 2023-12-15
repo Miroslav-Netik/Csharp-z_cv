@@ -19,7 +19,8 @@ namespace F2
             //F2_06_Suda_cisla_z_pole.Mainx(args);
             //F2_07_Serazeno_vzestupne.Mainx(args);
             //F2_08_Vzestupne_kolikaty_porusuje.Mainx(args);
-            F2_09_Linearni_posloupnost.Mainx(args);
+            //F2_09_Linearni_posloupnost.Mainx(args);
+            F2_10_Serazene_pole_vzestupne.Mainx(args);
         }
     }
 }
