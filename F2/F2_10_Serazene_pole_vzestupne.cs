@@ -20,10 +20,13 @@ namespace F2
             int pocet_opakovani = 20;
             int[] pole_cisel = new int[pocet_opakovani];
             int[] setridene_pole = new int[pocet_opakovani];
+            int[] s_setridene_pole = new int[pocet_opakovani];
             int max = 10;
             int min = 1;
             string txt_vystup = "";
             string txt_setridene = "";
+            string txt_s_setridene = "";
+
 
             Random rnd = new Random();
             for (int i = 0; i < pocet_opakovani; i++)
@@ -33,12 +36,21 @@ namespace F2
             }
             Console.WriteLine(txt_vystup);
 
+            // Vypis pole funkcí
             setridene_pole = SerazenePole(pole_cisel);
             for (int j = 0; j < setridene_pole.Length; j++)
             {
                 txt_setridene += setridene_pole[j] + ", ";
             }
             Console.WriteLine(txt_setridene);
+
+            // Vypis pole subrutinou
+            S_SerazenePole(pole_cisel,ref s_setridene_pole);
+            for (int j = 0; j < s_setridene_pole.Length; j++)
+            {
+                txt_s_setridene += s_setridene_pole[j] + ", ";
+            }
+            Console.WriteLine(txt_s_setridene);
 
             Console.WriteLine("\nStiskni cokoliv...");
             Console.ReadKey();
@@ -48,16 +60,15 @@ namespace F2
             int[] setridene_pole = new int[vstupni_pole.Length];
             int odkladaci;
 
-            //Array.Copy(vstupni_pole, setridene_pole, vstupni_pole.Length);
-            for (int i = 0; i < vstupni_pole.Length; i++)
+            // Bubble sorting - setřídí vstupní pole od nejmenšího po největší
+            Array.Copy(vstupni_pole, setridene_pole, vstupni_pole.Length);
+            /*for (int i = 0; i < vstupni_pole.Length; i++)
             {
                 setridene_pole[i] = vstupni_pole[i];
-            }
+            }*/
 
             for (int j = 0; j < setridene_pole.Length; j++)
             {
-
-
                 for (int i = 0; i < setridene_pole.Length - 1; i++)
                 {
                     if (setridene_pole[i] > setridene_pole[i + 1])
@@ -69,6 +80,28 @@ namespace F2
                 }
             }
             return setridene_pole;
+        }
+        static void S_SerazenePole(int[] vstupni_pole, ref int[] vystup)
+        {
+            // Bubble sorting - setřídí vstupní pole od nejmenšího po největší
+            int[] setridene_pole = new int[vstupni_pole.Length];
+            int odkladaci;
+
+            Array.Copy(vstupni_pole, setridene_pole, vstupni_pole.Length);
+
+            for (int j = 0; j < setridene_pole.Length; j++)
+            {
+                for (int i = 0; i < setridene_pole.Length - 1; i++)
+                {
+                    if (setridene_pole[i] > setridene_pole[i + 1])
+                    {
+                        odkladaci = setridene_pole[i];
+                        setridene_pole[i] = setridene_pole[i + 1];
+                        setridene_pole[i + 1] = odkladaci;
+                    }
+                }
+            }
+            vystup = setridene_pole;
         }
     }
 }
