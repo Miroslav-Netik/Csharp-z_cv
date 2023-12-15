@@ -21,7 +21,8 @@ namespace F2
             //F2_08_Vzestupne_kolikaty_porusuje.Mainx(args);
             //F2_09_Linearni_posloupnost.Mainx(args);
             //F2_10_Serazene_pole_vzestupne.Mainx(args);
-            F2_11_Caesarova_sifra.Mainx(args);
+            //F2_11_Caesarova_sifra.Mainx(args);
+            F2_12_sifrovani_slov.Mainx(args);
         }
     }
 }

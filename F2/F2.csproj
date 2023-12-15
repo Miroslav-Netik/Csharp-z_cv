@@ -54,6 +54,7 @@
     <Compile Include="F2_09_Linearni_posloupnost.cs" />
     <Compile Include="F2_10_Serazene_pole_vzestupne.cs" />
     <Compile Include="F2_11_Caesarova_sifra.cs" />
+    <Compile Include="F2_12_sifrovani_slov.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
