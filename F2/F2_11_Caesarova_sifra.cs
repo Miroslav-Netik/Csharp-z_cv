@@ -29,13 +29,14 @@ namespace F2
 
         char[] pole_prevodni = new char[pole_vstupni.Length];
         string[] pole_sifrovane = new string[pole_vstupni.Length];
-        char pismeno;
-        string pismeno_vystupni = "";
+        
         int kod_pismena, korekce, posunuti;
+
+        
 
         for (int i = 0; i < pole_vstupni.Length; i++)
         {
-            kod_pismena = pole_prevodni[i];
+            kod_pismena = (int)Convert.ToChar(pole_vstupni[i]);
             posunuti = kod_pismena + posun;
 
             // Pro velká písmena
@@ -62,10 +63,10 @@ namespace F2
             {
                 posunuti = kod_pismena;
             }
-            pismeno_vystupni = ((char)posunuti);
+            //pismeno_vystupni = Convert.ToChar(posunuti);
             for (int j = 0; j < pole_vstupni.Length; i++)
             {
-                pole_sifrovane[j] = pismeno_vystupni;
+                pole_sifrovane[j] = (posunuti).ToString();
             }
         }
         
