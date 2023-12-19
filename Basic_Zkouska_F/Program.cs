@@ -63,7 +63,7 @@ namespace Basic_Zkouska_F
             }
             return min;
         }
-        static void S_NajdiMin(int[] cisla,ref int vystup)
+        public static void S_NajdiMin(int[] cisla,ref int vystup)
         {
             // Najde nejmenší číslo v zadaném poli
             int min = cisla[0];
