@@ -50,6 +50,7 @@ namespace F2
             {
                 txt_vystup += pole_znaku_sifrovanych[j] + "\n";
             }
+            Console.WriteLine("\n");
             Console.WriteLine(txt_vystup);
 
             Console.WriteLine("\nStiskni cokoliv...");
