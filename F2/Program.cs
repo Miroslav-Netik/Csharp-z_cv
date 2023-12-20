@@ -23,6 +23,7 @@ namespace F2
             //F2_10_Serazene_pole_vzestupne.Mainx(args);
             //F2_11_Caesarova_sifra.Mainx(args);
             F2_12_sifrovani_slov.Mainx(args);
+           
         }
     }
 }
