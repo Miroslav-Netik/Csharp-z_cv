@@ -14,9 +14,7 @@ namespace Zkouska_E
          * počet a průměr kladných*/
         static void Main(string[] args)
         {
-
             // Zkouška E
-
 
             int[] poleCisel = new int[100];
             int pocitadlo = 0, vstup, soucetKladna = 0, pocitadloKladna = 0, soucetZaporna = 0, pocitadloZaporna = 0;

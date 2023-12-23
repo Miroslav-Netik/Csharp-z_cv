@@ -30,7 +30,6 @@ namespace Zkouska_F
             char[] upravenePole = UpravPole(vstupniPole);
             S_UpravPole(vstupniPole, ref s_upravenePole);
 
-
             Console.WriteLine("Původní pole: ");
             for (int i = 0; i < vstupniPole.Length; i++)
             {
