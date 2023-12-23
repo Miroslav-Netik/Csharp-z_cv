@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_zkouska_E", "Basic_zk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic_Zkouska_F", "Basic_Zkouska_F\Basic_Zkouska_F.csproj", "{9BA64787-7D05-40F8-9F88-3934D79E589A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zkouska_E", "Zkouska_E\Zkouska_E.csproj", "{012B5B18-4A91-4853-B35B-EC2A65144619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zkouska_F", "Zkouska_F\Zkouska_F.csproj", "{66D3CB26-B815-4E21-9688-2190DC467A6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{9BA64787-7D05-40F8-9F88-3934D79E589A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA64787-7D05-40F8-9F88-3934D79E589A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA64787-7D05-40F8-9F88-3934D79E589A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012B5B18-4A91-4853-B35B-EC2A65144619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012B5B18-4A91-4853-B35B-EC2A65144619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012B5B18-4A91-4853-B35B-EC2A65144619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012B5B18-4A91-4853-B35B-EC2A65144619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D3CB26-B815-4E21-9688-2190DC467A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D3CB26-B815-4E21-9688-2190DC467A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D3CB26-B815-4E21-9688-2190DC467A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D3CB26-B815-4E21-9688-2190DC467A6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
